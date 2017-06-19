@@ -40,6 +40,7 @@ RUN ./init.php
 RUN rm init.php
 
 RUN chmod ugo+rx -R /data
+RUN chown www-data:www-data -R /data
 
 VOLUME /data
 
