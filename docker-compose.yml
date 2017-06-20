@@ -5,6 +5,8 @@ services:
     ports:
      - "8080:80"
   es:
-    image: "elasticsearch:2"
+    image: "docker.elastic.co/elasticsearch/elasticsearch:5.4.2"
+    environment:
+     xpack.security.enabled: 'false'
     ports:
      - "9200:9200"
