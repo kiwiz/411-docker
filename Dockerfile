@@ -45,6 +45,7 @@ RUN chown www-data:www-data -R /data
 VOLUME /data
 
 COPY supervisord.conf /root/supervisord.conf
+COPY mail.ini /usr/local/etc/php/conf.d/
 COPY 411_cron /etc/cron.d/
 
 EXPOSE 80
