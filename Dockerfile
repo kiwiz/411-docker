@@ -24,8 +24,8 @@ RUN docker-php-ext-install \
 RUN a2enmod headers rewrite
 
 WORKDIR /var/www/411
-RUN curl -L https://github.com/etsy/411/releases/download/v1.4.0/release.tgz | tar xz
-RUN composer install --no-dev --optimize-autoloader
+RUN curl -L https://github.com/etsy/411/releases/download/v1.5.0/release.tgz | tar xz
+RUN COMPOSER=composer-es2x.json composer install --no-dev --optimize-autoloader
 
 RUN mkdir /data
 COPY 411.conf /data/000-default.conf
