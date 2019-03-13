@@ -1,3 +1,5 @@
+__Deprecated__: See [etsy/411](https://github.com/etsy/411) for Docker images.
+
 411 Docker
 ==========
 
